@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        app:navigationIcon="@drawable/nav_menu"
+        app:title="Home"
+        app:titleTextColor="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottombar"
+        android:layout_below="@id/toolbar" />
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        app:backgroundColor="#2196F3"
+        app:cornerRadius="20dp"
+        app:iconTintActive="@color/white"
+        app:indicatorRadius="5dp"
+        app:itemFontFamily="@font/zilla_slab_regular"
+        app:menu="@menu/menu"
+        app:textColor="@color/white" />
+
+</RelativeLayout>
