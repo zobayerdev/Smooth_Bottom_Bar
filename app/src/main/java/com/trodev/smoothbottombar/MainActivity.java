@@ -60,20 +60,6 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-                if (i == 1) {
-                    FragmentManager fragmentManager = getSupportFragmentManager();
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                    fragmentTransaction.replace(R.id.frameLayout, new SettingsFragment());
-                    fragmentTransaction.commit();
-
-                    /*set all status bar, navigation bar, toolbar color*/
-                    smoothBottomBar.setBarBackgroundColor(Color.parseColor("#009688"));
-                    getWindow().setNavigationBarColor(Color.parseColor("#009688"));
-                    getWindow().setStatusBarColor(Color.parseColor("#009688"));
-                    toolbar.setBackgroundColor(Color.parseColor("#009688"));
-                    toolbar.setTitle("Settings");
-                }
-
                 if (i == 2) {
                     FragmentManager fragmentManager = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -86,6 +72,20 @@ public class MainActivity extends AppCompatActivity {
                     getWindow().setStatusBarColor(Color.parseColor("#FF424E4D"));
                     toolbar.setBackgroundColor(Color.parseColor("#FF424E4D"));
                     toolbar.setTitle("About Us");
+                }
+
+                if (i == 1) {
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.frameLayout, new SettingsFragment());
+                    fragmentTransaction.commit();
+
+                    /*set all status bar, navigation bar, toolbar color*/
+                    smoothBottomBar.setBarBackgroundColor(Color.parseColor("#009688"));
+                    getWindow().setNavigationBarColor(Color.parseColor("#009688"));
+                    getWindow().setStatusBarColor(Color.parseColor("#009688"));
+                    toolbar.setBackgroundColor(Color.parseColor("#009688"));
+                    toolbar.setTitle("Settings");
                 }
 
                 return false;

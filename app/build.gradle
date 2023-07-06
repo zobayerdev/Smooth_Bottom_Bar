@@ -39,4 +39,7 @@ dependencies {
 
     /*smooth bottom bar*/
     implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'
+
+    /*glide*/
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
 }

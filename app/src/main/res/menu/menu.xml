@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/menu_home"
@@ -8,8 +9,8 @@
 
     <item
         android:id="@+id/menu_setting"
-        android:icon="@drawable/ic_setting"
-        android:title="Settings" />
+        android:icon="@drawable/ic_data"
+        android:title="Json Data" />
 
     <item
         android:id="@+id/menu_about"
