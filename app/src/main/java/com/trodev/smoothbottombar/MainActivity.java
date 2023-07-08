@@ -8,6 +8,11 @@ import androidx.fragment.app.FragmentTransaction;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import com.trodev.smoothbottombar.AboutFragment;
+import com.trodev.smoothbottombar.HomeFragment;
+import com.trodev.smoothbottombar.R;
+import com.trodev.smoothbottombar.SettingsFragment;
+
 import me.ibrahimsn.lib.OnItemSelectedListener;
 import me.ibrahimsn.lib.SmoothBottomBar;
 

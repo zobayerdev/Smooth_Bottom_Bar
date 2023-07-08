@@ -20,7 +20,8 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:orientation="horizontal"
-            android:weightSum="3">
+            android:weightSum="3"
+            >
 
             <ImageView
                 android:id="@+id/imageIv"
@@ -29,40 +30,31 @@
                 android:src="@drawable/ic_hone" />
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
-                android:orientation="vertical"
-                android:layout_weight="3"
-                >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/nameTv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/zila_slam_semibold"
-                    android:text="name"
+                    android:fontFamily="@font/kalpurush"
+                    android:text="নাম"
+                    android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="19sp" />
 
                 <TextView
-                    android:id="@+id/descriptionTv"
+                    android:id="@+id/detailsTv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/zila_slam_semibold"
-                    android:text="description"
-                    android:textColor="@color/black"
+                    android:text="details"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/dateTv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/zila_slam_semibold"
-                    android:text="date"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
 
             </LinearLayout>
 

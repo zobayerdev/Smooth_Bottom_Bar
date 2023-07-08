@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FullDataActivity">
+    tools:context=".FullViewActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -16,7 +16,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
 
             <ImageView
                 android:id="@+id/image"
@@ -28,25 +30,19 @@
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/zila_slam_semibold"
-                android:text="Name"
+                android:fontFamily="@font/kalpurush"
+                android:text="নাম"
+                android:textStyle="bold"
                 android:textSize="25sp" />
 
             <TextView
-                android:id="@+id/description"
+                android:id="@+id/details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/zila_slam_semibold"
-                android:text="Description"
-                android:textSize="25sp" />
+                android:fontFamily="@font/kalpurush"
+                android:text="বর্ণনা"
+                android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/zila_slam_semibold"
-                android:text="Date"
-                android:textSize="25sp" />
 
         </LinearLayout>
 

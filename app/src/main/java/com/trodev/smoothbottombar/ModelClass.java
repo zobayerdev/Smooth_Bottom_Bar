@@ -15,7 +15,6 @@ public class ModelClass {
     public ModelClass() {
 
     }
-
     public String getName() {
         return name;
     }
